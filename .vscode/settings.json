@@ -1,0 +1,10 @@
+{
+  "scm.defaultViewMode": "list",
+  "scm.defaultViewSortKey": "name",
+  "scm.diffDecorationsGutterPattern": {},
+  "scm.diffDecorationsGutterWidth": 3,
+  "scm.diffDecorationsIgnoreTrimWhitespace": "true",
+  "files.insertFinalNewline": false,
+  "editor.renderLineHighlight": "line",
+  "explorer.compactFolders": false
+}
