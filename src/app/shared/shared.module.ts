@@ -5,10 +5,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
+import { MatIconModule, } from '@angular/material/icon';
 import { FlexLayoutModule } from "@angular/flex-layout";
-
-
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -21,9 +23,12 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     CommonModule,
     MatDividerModule,
     MatToolbarModule,
+    MatMenuModule,
+    MatButtonModule,
     MatIconModule,
-    FlexLayoutModule
-
+    FlexLayoutModule,
+    MatListModule,
+    RouterModule
 
   ],
   exports: [
