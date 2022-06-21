@@ -8,14 +8,25 @@
   </div>
 
 <mat-divider></mat-divider>
-<mat-selection-list [multiple]="false">
+<!-- <mat-selection-list [multiple]="false">
   <h2 matSubheader>Page</h2>
 
   <a routerLink="/" routerLinkActive="list-item-active"><mat-list-option>Dashboard</mat-list-option></a>
   <a routerLink="/posts" routerLinkActive="list-item-active"><mat-list-option>Posts</mat-list-option></a>
   <a routerLink="/articles" routerLinkActive="list-item-active"><mat-list-option>Articles</mat-list-option></a>
- </mat-selection-list>
+ </mat-selection-list> -->
+
+ <h2 matSubheader>Pages</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a>
 
 <mat-divider></mat-divider>
-another menu
+<h2 matSubheader>
+  Tools
+</h2>
+<a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts"><mat-icon>import_contacts</mat-icon>Contacts</a>
+<a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts"><mat-icon>contact_phone</mat-icon>Phone</a>
+
 </mat-nav-list>

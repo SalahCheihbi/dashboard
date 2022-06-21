@@ -6,5 +6,8 @@
   "scm.diffDecorationsIgnoreTrimWhitespace": "true",
   "files.insertFinalNewline": false,
   "editor.renderLineHighlight": "line",
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "cSpell.words": [
+    "Highcharts"
+  ]
 }
