@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import HC_exporting from 'highcharts/modules/exporting';
+
 @Component({
   selector: 'app-widget-area',
   templateUrl: './area.component.html',
@@ -54,6 +56,13 @@ export class AreaComponent implements OnInit {
         tooltip: {
             pointFormat: '{series.name} had stockpiled <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
         },
+        exporting:{
+          enabled:true
+
+        },
+        credits:{
+          enabled:false
+        },
         plotOptions: {
             area: {
                 pointStart: 1940,
@@ -70,6 +79,9 @@ export class AreaComponent implements OnInit {
             }
         },
         series: [{
+
+            color:'#ff0000',
+
             name: 'USA',
             data: [
                 null, null, null, null, null, 6, 11, 32, 110, 235,
@@ -82,7 +94,7 @@ export class AreaComponent implements OnInit {
                 5113, 5113, 4954, 4804, 4761, 4717, 4368, 4018
             ]
         }, {
-            name: 'USSR/Russia',
+            name: 'Morocco/Russia',
             data: [null, null, null, null, null, null, null, null, null, null,
                 5, 25, 50, 120, 150, 200, 426, 660, 869, 1060,
                 1605, 2471, 3322, 4238, 5221, 6129, 7089, 8339, 9399, 10538,
@@ -93,6 +105,10 @@ export class AreaComponent implements OnInit {
                 12600, 11400, 5500, 4512, 4502, 4502, 4500, 4500
             ]
         }]
-    }
+    };
+    HC_exporting(Highcharts);
+    setTimeout(()=>{
+      window.dispatchEvent(new Event('resize'));
+    },3000);
     }
 }
