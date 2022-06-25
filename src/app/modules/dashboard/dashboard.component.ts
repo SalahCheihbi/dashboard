@@ -1,3 +1,4 @@
+import { DashboardService } from './../dashboard.service';
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
@@ -40,16 +41,20 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements AfterViewInit {
+  chartCard =[];
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   @ViewChild(MatPaginator) paginator: MatPaginator;
+  constructor(private dashboardService: DashboardService) { }
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
+  ngOnInit() {
 
-
+    this.chartCard = this.dashboardService.card();
 
 
 }
 
+}

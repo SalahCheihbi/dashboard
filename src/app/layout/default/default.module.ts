@@ -1,5 +1,5 @@
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDividerModule } from '@angular/material/divider';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from './../../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './../../modules/dashboard/dashboard.component';
@@ -9,11 +9,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { DefaultComponent } from './default.component';
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatListModule} from '@angular/material/list';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatListModule } from '@angular/material/list';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {  MatTableModule } from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import {  MatTableModule } from '@angular/material/table';
     SharedModule,
     MatSidenavModule,
     MatDividerModule,
+    MatListModule,
     MatCardModule,
     FlexLayoutModule,
     MatListModule,

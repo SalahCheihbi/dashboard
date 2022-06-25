@@ -15,6 +15,8 @@ import { AreaComponent } from './widgets/area/area.component';
 
 import { HighchartsChartModule } from 'highcharts-angular';
 import { PieComponent } from './widgets/pie/pie/pie.component';
+import { BrandLightComponent } from './widgets/brand-light/brand-light.component';
+
 
 
 
@@ -24,7 +26,8 @@ import { PieComponent } from './widgets/pie/pie/pie.component';
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    PieComponent
+    PieComponent,
+    BrandLightComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +46,8 @@ import { PieComponent } from './widgets/pie/pie/pie.component';
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    PieComponent
+    PieComponent,
+    BrandLightComponent
   ]
 })
 export class SharedModule { }
